@@ -1,0 +1,84 @@
+/* Wrapper for alignment */
+.message-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+/* Sent by you */
+.message-row.you {
+  justify-content: flex-end;
+}
+
+/* Received message */
+.message-row.other {
+  justify-content: flex-start;
+}
+
+/* Bubble */
+.message-bubble {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  animation: fadeIn 0.2s ease-in;
+}
+
+/* Sent bubble */
+.message-bubble.sent {
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 5px;
+}
+
+/* Received bubble */
+.message-bubble.received {
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+}
+
+/* Sender name */
+.sender-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #075e54;
+  margin-bottom: 2px;
+}
+
+/* Message text */
+.message-text {
+  word-wrap: break-word;
+}
+
+/* Footer */
+.message-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #555;
+}
+
+/* Time */
+.time {
+  margin-right: 5px;
+}
+
+/* Read status */
+.status {
+  color: #34b7f1;
+  font-size: 12px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
